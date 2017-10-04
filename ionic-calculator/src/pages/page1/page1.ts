@@ -7,11 +7,16 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'page1.html'
 })
 export class Page1 {
+  public display: string;
+
   constructor(public navCtrl: NavController) {
     this.display = "0";
   }
 
-  public display: string;
+  public onNumberClick(event) {
+    let outerText = event.target.outerText;
+    this.display = this.display + outerText;
+  }
 
   onLink(url: string) {
     window.open(url);

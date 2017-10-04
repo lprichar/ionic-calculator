@@ -10,7 +10,6 @@
 <ion-content padding>
   <div style="text-align: right; font-size: xx-large;">{{ display }}</div>
 
-
   <ion-grid>
     <ion-row>
       <ion-col col-4><button ion-button block color="light">CE</button></ion-col>
@@ -19,26 +18,26 @@
       <ion-col col-4><button ion-button block color="light">%</button></ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-4><button ion-button block color="light">7</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">8</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">9</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">7</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">8</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">9</button></ion-col>
       <ion-col col-4><button ion-button block color="light">X</button></ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-4><button ion-button block color="light">4</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">5</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">6</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">4</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">5</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">6</button></ion-col>
       <ion-col col-4><button ion-button block color="light">-</button></ion-col>
     </ion-row>
     <ion-row>
-      <ion-col col-4><button ion-button block color="light">1</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">2</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">3</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">1</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">2</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">3</button></ion-col>
       <ion-col col-4><button ion-button block color="light">+</button></ion-col>
     </ion-row>
     <ion-row>
       <ion-col col-4><button ion-button block color="light">+-</button></ion-col>
-      <ion-col col-4><button ion-button block color="light">0</button></ion-col>
+      <ion-col col-4><button ion-button block (click)="onNumberClick($event)" color="light">0</button></ion-col>
       <ion-col col-4><button ion-button block color="light">.</button></ion-col>
       <ion-col col-4><button ion-button block color="light">=</button></ion-col>
     </ion-row>
